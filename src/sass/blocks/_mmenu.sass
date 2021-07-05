@@ -1,0 +1,37 @@
+.menu
+  display: flex
+  justify-content: space-between
+  align-items: center
+  justify-items: center
+  height: 120px
+  margin: 0
+  padding: 0
+  list-style-type: none
+  &__bkg
+    // min-height: 12px
+    width: 100%
+    background-color: $dblu
+    // position: fixed
+    opacity: 1
+    z-index: 255
+  &__ref
+    font-family: Roboto
+    font-weight: bold
+    font-size: 20px
+    line-height: 23px
+    text-align: left
+    color: #ffffff
+    &:hover
+      // text-decoration: none 
+      color: $glou
+  &__item
+    border: none
+    padding-right: 4px
+    padding-left: 4px
+    &:last-child
+      border-right: none
+    &_tel
+      display: flex
+      flex-direction: column
+      a
+        line-height: 40px
