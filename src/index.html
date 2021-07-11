@@ -43,6 +43,7 @@
     <meta name="theme-color" content="#ffffff"> -->
 
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/chief-slider.css">
 </head>
 <body>
     <header>
@@ -60,7 +61,7 @@
                         <li class="menu__item"><a href="#require" class="menu__ref">УСЛУГИ</a></li>
                         <li class="menu__item"><a href="#require" class="menu__ref">ЦЕНЫ</a></li>
                         <li class="menu__item"><a href="#" class="menu__ref">КОНТАКТЫ</a></li>
-                        <li class="menu__item"><button data-modal="consultation" class="button button_main">оставить заявку</button></li>
+                        <li class="menu__item"><button data-modal="consult" class="button button_main">оставить заявку</button></li>
                     </ul>
                 </div>
             </div>
@@ -135,7 +136,7 @@
                         </div>
                     </div>
                 </div>
-                <button data-modal="consultation" class="button button_serves">заказать консультацию</button>
+                <button data-modal="consult" class="button button_serves">заказать консультацию</button>
             </div>
         </div>
     </section>
@@ -201,19 +202,152 @@
                         <label for="Ctel">Ваш телефон: </label>
                         <input type="tel" id="Ctel" name="Ctel" style="width: 60%" placeholder="+7(999)111-22-33" required><br>
                         <label for="percon"><input type="checkbox" id="percon" name="percon" required>Я согласен на обработку персональных данных и ознакмлен с <a href="">политикой конфидециальности</a>.</label>
-                        <input type="submit" value="ОТПРАВИТЬ ЗАПРОС" class="button button_form">
+                        <input type="submit" data-modal="confirmed" value="ОТПРАВИТЬ ЗАПРОС" class="button button_form">
                     </form>
                 </div>
             </div>
         </div>
-
     </section>
+    <section class="cat" id="catalog">
+        <div class="container">
+            <h2 class="cat__header">ПОДБЕРЕМ КОМПЛЕКТУЮЩИЕ ПОД ВАШ БЮДЖЕТ</h2>
+            <div class="cat__txt">  
+                <p>Мы работаем с ведущими Российскими и иностранными производителями материалов и комплектующих для структурированных кабельных сетей. На основании собственного опыта мы применяем только качественные и проверенные материалы, которые гарантирую высокую долговечность и эксплуатационные характеристики.</p> 
+                <p>Однако, как и в любой сфере, у нас есть что предложить клиентам, которые ищут не только практичность, но и стремяться придать своему рабочему пространству эстетичный вид и получить дополнительный комфорт от использования высококачественного оборудования.</p>    
+                <p>Именно поэтому мы готовы помочь выбрать то что Вам нужно!</p>    
+            </div>
+            <div class="cat__subheader">Предлагаем Вашему внимани следующие уровни комплектующих:</div>
+            <div class="cat__cont">
+                <h3 class="cat__cont_sh1">Базовый</h3>
+                <div class="cat__cont_txt">
+                    В работе применяются материалы отечественных производителей и бюджетных линеек международных лидеров отрасли.
+                    IEK, DKC, .... Legrand METRA, Shnider Electric OptiLine  и др.    
+                </div>
+                <div class="slider">
+                    <div class="slider__container">
+                        <div class="slider__wrapper">
+                            <div class="slider__items">
+                            <div class="slider__item">
+                                <img src="img/carusel/basic/pexels-cottonbro-5090637.jpg" alt="1">
+                            </div>
+                            <div class="slider__item">
+                                <img src="img/carusel/basic/pexels-pixabay-159304.jpg" alt="1">
+                            </div>
+                            <div class="slider__item">
+                                <img src="img/carusel/adv/about.jpeg" alt="1">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                    <a href="#" class="slider__control" data-slide="prev"></a>
+                    <a href="#" class="slider__control" data-slide="next"></a>
+                </div>
+
+            </div>
+            
+            <div class="cat__cont">
+                <h3 class="cat__cont_sh2">Продвинутый</h3>
+                <div class="cat__cont_txt">
+                    В работе применяются материалы профессиональных линеек международных лидеров отрасли, которые обеспечат отличный внешний вид и функциональнгость на долгие годы.
+                    Legrand DLP, Shnider Electric Thorsman  и др.
+                </div>
+                <div class="slider">
+                    <div class="slider__container">
+                      <div class="slider__wrapper">
+                        <div class="slider__items">
+                          <div class="slider__item">
+                            <img src="img/carusel/adv/about.jpeg" alt="1">
+                          </div>
+                          <div class="slider__item">
+                            <img src="img/carusel/adv/pexels-brett-sayles-4818711.jpg" alt="1">
+                          </div>
+                          <div class="slider__item">
+                            <img src="img/carusel/basic/pexels-cottonbro-5090637.jpg" alt="1">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                    <a href="#" class="slider__control" data-slide="prev"></a>
+                    <a href="#" class="slider__control" data-slide="next"></a>
+                </div>
+
+            </div>
+            <div class="cat__cont">
+                <h3 class="cat__cont_sh3">Премиальный</h3>
+                <div class="cat__cont_txt">
+                    В работе применяются материалы из премиальных линеек лучших производителей кабельных систем мира. Они гаранитруют стильный внешний вид Вашего рабочего пространства и сделают рабочий процесс не только удобным, но и приятным.
+                    производители ХЗ))))
+                </div>
+                <div class="slider">
+                    <div class="slider__container">
+                      <div class="slider__wrapper">
+                        <div class="slider__items">
+                          <div class="slider__item">
+                            <img src="img/carusel/lux/pexels-pixabay-163047.jpg" alt="1">
+                          </div>
+                          <div class="slider__item">
+                            <img src="img/carusel/lux/pexels-willquezada-4398314.jpg" alt="1">
+                          </div>
+                          <div class="slider__item">
+                            <img src="img/carusel/basic/pexels-pixabay-159304.jpg" alt="1">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                    <a href="#" class="slider__control" data-slide="prev"></a>
+                    <a href="#" class="slider__control" data-slide="next"></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aba7f3cf6a4683b99731f7e042b9bb9998d6131615676e4956bcae801473af708&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
+        <div class="footer__conts">
+            <address>Москва, Переведеновский переулок, 13с4</address>
+            <a href="tel:" class="footer__conts_tel">+7(495)666-13-13</a>
+            <a href="tel:" class="footer__conts_tel">+7(495)666-13-13</a>
+            <a href="email:" class="footer__conts_email">eso@lux.ru</a>
+            <button data-modal="consult" class="button button_footer">оставить заявку</button>          
+
+        </div>
+    </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consult">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form action="#" class="feed-form">
+                <div>
+                    <input name="name" placeholder="Ваше имя" type="text">
+                    <input name="phone" placeholder="Ваш телефон" type="tel">
+                    <input name="email" placeholder="Ваш E-mail" type="email">
+                    <button class="button button_submit">
+                        ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ    
+                    </button>
+                </div>   
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="confirmed">
+            <div class="modal__close">&times;</div>
+            <div class="modal__title">Спасибо за вашу заявку!</div>
+            <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время</div>
+        </div>
+    </div>
+
+    <a href="#" id="go_up" class="pageup"><img src="icons/up.svg" alt="up" ></a>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/WOW.js"></script>
-
+    <script defer src="js/chief-slider.js"></script>
+    <!-- <script src="js/WOW.js"></script> -->
     <script src="js/script.js"></script>
+
 </body>
 </html>
